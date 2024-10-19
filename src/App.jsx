@@ -51,7 +51,7 @@ function App() {
           <Route exact path="/talent" element={<Talent />} />
           <Route exact path="/find-a-job" element={<FindAJob />} />
           <Route exact path="/get-hired" element={<GetHired />} />
-          <Route exact path="/Hire-talent" element={<HireTalent />} />
+          <Route exact path="/hire-talent" element={<HireTalent />} />
           <Route exact path="/insights" element={<Insights />} />
           <Route exact path="/blogs" element={<Bolg />} />
           <Route exact path="/hiring-guides" element={<HiringGuides />} />

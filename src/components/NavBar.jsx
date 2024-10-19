@@ -1,153 +1,168 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
-    <header className="menubar--section">
-      <a className="menubar--skip" href="#welcome">
+    <header className="bg-[#093046]  text-white py-4">
+      {/* <a className="sr-only focus:not-sr-only" href="#welcome">
         Skip to main content
-      </a>
-      <div className="container menubar--container flex justify-between items-center">
+      </a> */}
+      <div className="container mx-auto w-[90%] flex justify-between items-center px-4">
         {/* Logo */}
         <a
-          className="menubar--logo-wrap"
-          href="https://mondo.com"
+          href="/"
           aria-label="return to homepage"
+          className="flex items-center font-bold text-2xl"
         >
-          <img
-            className="menubar--logo"
-            src="https://mondo.com/wp-content/themes/mondo-2023/images/mondo-logo-w.svg"
-            width="180"
-            height="64"
-            loading="eager"
-            alt="Mondo an Addison Group Company"
-          />
+          MY SHARK
         </a>
 
-        {/* Menu */}
-        <nav
-          className={`menubar--menu-wrap ${isMenuOpen ? "block" : "hidden"} md:block`}
-        >
-          <ul
-            id="menubar--menu"
-            className="menubar--menu space-x-4 md:flex"
-            aria-labelledby="menubar--button"
-          >
-            {/* Example menu items */}
-            <li className="menu-item">
-              <Link to="/who-we-are" className="sf-with-ul">
+        {/* Navigation Menu */}
+        <nav className={`hidden lg:flex items-center space-x-10`}>
+          <ul className="flex space-x-6">
+            <li className="relative group">
+              <a href="/who-we-are" className="font-[.875rem]">
                 Who We Are
-              </Link>
-              <ul className="sub-menu hidden md:block">
+              </a>
+              <ul className="absolute w-max px-6 py-4 left-0 hidden group-hover:block bg-white text-black p-2 space-y-2 rounded-md">
                 <li>
-                  <Link to="/who-we-are/culture">Culture</Link>
+                  <a href="/culture">Culture</a>
                 </li>
                 <li>
-                  <Link to="/who-we-are/leadership">Leadership</Link>
+                  <a href="/leadership">Leadership</a>
                 </li>
                 <li>
-                  <Link to="/our-offices">Our Offices</Link>
+                  <a href="/our-offices">Our Offices</a>
                 </li>
                 <li>
-                  <Link to="/careers">Join Our Team</Link>
+                  <a href="/join-our-team">Join Our Team</a>
                 </li>
                 <li>
-                  <Link to="/who-we-are/dei">Diversity & Inclusion</Link>
+                  <a href="/diversity-inclusion">
+                    Diversity & Inclusion
+                  </a>
                 </li>
               </ul>
             </li>
-            <li className="menu-item">
-              <Link to="/services" className="sf-with-ul">
+            <li className="relative group">
+              <a href="/what-we-do" className="">
                 What We Do
-              </Link>
-              <ul className="sub-menu hidden md:block">
+              </a>
+              <ul className="absolute w-max px-6 py-4 left-0 hidden group-hover:block bg-white text-black  p-2 space-y-2 rounded-md">
                 <li>
-                  <Link to="/services/digital-marketing-staffing">
+                  <a href="/digital-marketing-staffing">
                     Digital Marketing Staffing
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/services/creative-staffing">Creative Staffing</Link>
+                  <a href="/creative-staffing">
+                    Creative Staffing
+                  </a>
                 </li>
                 <li>
-                  <Link to="/services/it-tech-staffing">IT & Tech Staffing</Link>
+                  <a href="/it-tech">
+                    IT & Tech Staffing
+                  </a>
                 </li>
               </ul>
             </li>
-            <li className="menu-item">
-              <Link to="/hire-talent" className="sf-with-ul">
+            <li className="relative group">
+              <a href="/talent" className="">
                 Talent
-              </Link>
-              <ul className="sub-menu hidden md:block">
+              </a>
+              <ul className="absolute left-0 w-max px-6 py-4 hidden group-hover:block bg-white text-black p-2 space-y-2 rounded-md">
                 <li>
-                  <Link to="/hire-talent">Hire Talent</Link>
+                  <a href="/hire-talent">Hire Talent</a>
                 </li>
                 <li>
-                  <Link to="/get-hired">Get Hired</Link>
+                  <a href="/get-hired">Get Hired</a>
                 </li>
                 <li>
-                  <Link to="/jobs">Find a Job</Link>
+                  <a href="/find-a-job">Find a Job</a>
                 </li>
               </ul>
             </li>
-            <li className="menu-item">
-              <Link to="/insights" className="sf-with-ul">
+            <li className="relative group">
+              <a href="/insights" className="">
                 Insights
-              </Link>
-              <ul className="sub-menu hidden md:block">
+              </a>
+              <ul className="absolute left-0 w-max px-4 py-4 hidden group-hover:block bg-white text-black p-2 space-y-2 rounded-md">
                 <li>
-                  <Link to="/insights">Blog</Link>
+                  <a href="/blogs">Blog</a>
                 </li>
                 <li>
-                  <Link to="/resources">Hiring Guides</Link>
+                  <a href="/hiring-guides">Hiring Guides</a>
                 </li>
                 <li>
-                  <Link to="/salary-guide">Salary Guide</Link>
+                  <a href="/salary-guide">Salary Guide</a>
                 </li>
                 <li>
-                  <Link to="/news">In The News</Link>
+                  <a href="/in-the-news">In The News</a>
                 </li>
-                <li>
-                  <Link to="/videos">Videos</Link>
-                </li>
+               
               </ul>
             </li>
-            <li className="menu-item">
-              <Link to="/contact">Contact Us</Link>
+            <li>
+              <a href="/contact-us" className="">
+                Contact Us
+              </a>
             </li>
           </ul>
         </nav>
 
         {/* Login Button */}
-        <div className="menubar--login-wrap hidden md:block">
-          <a
-            className="menubar--login-button"
-            href="https://mondo.com/vault/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Login
-          </a>
-        </div>
+       
 
-        {/* Hamburger button */}
+        {/* Hamburger Menu for Mobile */}
         <button
-          className="menubar--hamburger md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden flex flex-col space-y-1 focus:outline-none"
           aria-label="toggle menu"
-          aria-haspopup="true"
-          aria-controls="menubar--menu"
+          onClick={toggleMenu}
         >
-          <span className="menubar--hamburger-box">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+          <span className="w-6 h-1 bg-white"></span>
+          <span className="w-6 h-1 bg-white"></span>
+          <span className="w-6 h-1 bg-white"></span>
         </button>
       </div>
-      <div className="header--shadow-effect"></div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <nav className="lg:hidden bg-black text-white mt-4">
+          <ul className="space-y-4 px-4">
+            <li>
+              <a href="/who-we-are" className="block">
+                Who We Are
+              </a>
+            </li>
+            <li>
+              <a href="/what-we-do" className="block">
+                What We Do
+              </a>
+            </li>
+            <li>
+              <a href="/talent" className="block">
+                Talent
+              </a>
+            </li>
+            <li>
+              <a href="/insights" className="block">
+                Insights
+              </a>
+            </li>
+            <li>
+              <a href="/contact" className="block">
+                Contact Us
+              </a>
+            </li>
+           
+          </ul>
+        </nav>
+      )}
     </header>
   );
 };
