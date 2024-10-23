@@ -13,45 +13,35 @@ const DigitalMarketingStaffing = () => {
   const services = [
     {
       name: "Analytics & Strategy",
-      url: "",
     },
     {
       name: "Customer Experience",
-      url: "",
     },
     {
       name: "Digital Marketing Quality Assurance",
-      url: "",
     },
     {
       name: "eCommerce",
-      url: "",
     },
     {
       name: "Executive",
-      url: "",
     },
     {
       name: "Marketing Automation & Demand Gen",
-      url: "",
     },
     {
       name: "MarTech",
-      url: "",
     },
     {
       name: "Media Planning & Buying",
-      url: "",
     },
     {
       name: "Project Management",
-      url: "",
     },
     {
       name: "SEO/SEM",
-      url: "",
     },
-    { name: "UX/UI", url: "" },
+    { name: "UX/UI" },
   ];
 
   return (
@@ -104,19 +94,9 @@ const DigitalMarketingStaffing = () => {
             <li
               key={index}
               data-aos="fade-in"
-              className="text-blue-500 border-b-2 p-2 font-bold hover:text-blue-300 text-lg lg:text-xl"
+              className="text-blue-500 border-b-2 p-2 font-bold  text-base lg:text-lg"
             >
-              <a
-                href={service.url}
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent default link behavior
-                  window.location.href = "/get-hired"; // Redirect to /get-hired
-                }}
-                className="/get-hired"
-                target="_self" // Opens in the same tab
-              >
-                {service.name}
-              </a>
+              <a href={service.url}>{service.name}</a>
             </li>
           ))}
         </ul>

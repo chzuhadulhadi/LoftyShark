@@ -12,46 +12,20 @@ const CreativeStaffing = () => {
 
   const services = [
     {
-      name: "Analytics & Strategy",
-      url: "https://mondo.com/service/hire-web-analytics-consultants/",
+      name: "Client Services",
     },
     {
-      name: "Customer Experience",
-      url: "https://mondo.com/service/hire-cx-customer-experience-talent-capabilities/",
+      name: "Content & Social",
     },
     {
-      name: "Digital Marketing Quality Assurance",
-      url: "",
+      name: "Creative Design & Production",
     },
     {
-      name: "eCommerce",
-      url: "",
+      name: "Graphic Designe",
     },
     {
-      name: "Executive",
-      url: "",
+      name: "Motion Design & Videography",
     },
-    {
-      name: "Marketing Automation & Demand Gen",
-      url: "",
-    },
-    {
-      name: "MarTech",
-      url: "",
-    },
-    {
-      name: "Media Planning & Buying",
-      url: "",
-    },
-    {
-      name: "Project Management",
-      url: "",
-    },
-    {
-      name: "SEO/SEM",
-      url: "",
-    },
-    { name: "UX/UI", url: "" },
   ];
 
   return (
@@ -90,26 +64,16 @@ const CreativeStaffing = () => {
           className="lg:text-6xl text-4xl md:px-0 px-4 font-semibold uppercase text-center mb-8"
           data-aos="fade-in"
         >
-          Our Digital Marketing Services
+          Our Creative Staffing Services
         </h2>
         <ul className="text-center space-y-4">
           {services.map((service, index) => (
             <li
               key={index}
               data-aos="fade-in"
-              className="text-blue-500 border-b-2 p-2 font-bold hover:text-blue-300 text-lg lg:text-xl"
+              className="text-blue-500 border-b-2 p-2 font-bold text-base lg:text-lg"
             >
-              <a
-                href={service.url}
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent the default link behavior
-                  window.location.href = "/talent"; // Redirect to /get-hired
-                }}
-                className="/talent"
-                target="_self" // Ensures it opens in the same tab
-              >
-                {service.name}
-              </a>
+              <a href={service.url}>{service.name}</a>
             </li>
           ))}
         </ul>

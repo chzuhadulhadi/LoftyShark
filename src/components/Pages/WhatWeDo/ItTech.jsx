@@ -12,46 +12,36 @@ const ItTech = () => {
 
   const services = [
     {
-      name: "Analytics & Strategy",
-      url: "",
+      name: "AR, VR & IoT",
     },
     {
-      name: "Customer Experience",
-      url: "",
+      name: "BI, Big Data & Cloud",
     },
     {
-      name: "Digital Marketing Quality Assurance",
-      url: "",
+      name: "Web & Mobile Development",
     },
     {
-      name: "eCommerce",
-      url: "",
+      name: "Data Science",
     },
     {
-      name: "Executive",
-      url: "",
+      name: "Database Administrators (DBA)",
     },
     {
-      name: "Marketing Automation & Demand Gen",
-      url: "",
+      name: "DevOps",
     },
     {
-      name: "MarTech",
-      url: "",
+      name: "eCommerce Tech",
     },
     {
-      name: "Media Planning & Buying",
-      url: "",
+      name: "Hire IT Executives | Mondo Staffing",
     },
     {
-      name: "Project Management",
-      url: "",
+      name: "Infrastructure & Support",
     },
     {
-      name: "SEO/SEM",
-      url: "",
+      name: "Software Development",
     },
-    { name: "UX/UI", url: "" },
+    { name: "Software Development" },
   ];
 
   return (
@@ -92,19 +82,9 @@ const ItTech = () => {
             <li
               key={index}
               data-aos="fade-in"
-              className=" text-blue-500 border-b-2 p-3 font-bold hover:text-blue-300 text-lg lg:text-xl"
+              className=" text-blue-500 border-b-2 p-3 font-bold  text-base lg:text-lg"
             >
-              <a
-                href={service.url}
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent the default link behavior
-                  window.location.href = "/talent"; // Redirect to /get-hired
-                }}
-                className="/talent"
-                target="_self" // Ensures it opens in the same tab
-              >
-                {service.name}
-              </a>
+              <a href={service.url}>{service.name}</a>
             </li>
           ))}
         </ul>
