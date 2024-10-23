@@ -6,71 +6,40 @@ const Footer = () => {
       <div className="container justify-center w-[90%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* Column 1 */}
         <div>
-          <a
-            href="https://mondo.com"
-            aria-label="return to homepage"
-            className="flex items-center font-bold text-2xl"
-          >
-            MY SHARK
+        <a
+          href="https://My Shark.com"
+          aria-label="return to homepage"
+          className="flex items-center font-bold text-2xl"
+        >
+          MY SHARK
+        </a>
+        <div className="flex space-x-4">
+          <a href="#" className="text-white hover:text-gray-400">
+            <i className="fab fa-facebook"></i>
           </a>
-          <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="text-white hover:text-gray-400">
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </div>
+          <a href="#" className="text-white hover:text-gray-400">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="#" className="text-white hover:text-gray-400">
+            <i className="fab fa-instagram"></i>
+          </a>
+          <a href="#" className="text-white hover:text-gray-400">
+            <i className="fab fa-linkedin"></i>
+          </a>
+        </div>
         </div>
         <div>
+          
           <ul>
-            <li>
-              <a href="/who-we-are" className="text-white hover:text-gray-400">
-                WHO WE ARE
-              </a>
-            </li>
-            <li>
-              <a href="/culture" className="text-white hover:text-gray-400">
-                CULTURE
-              </a>
-            </li>
-            <li>
-              <a href="/leadership" className="text-white hover:text-gray-400">
-                LEADERSHIP
-              </a>
-            </li>
-            <li>
-              <a href="/our-offices" className="text-white hover:text-gray-400">
-                OUR OFFICES
-              </a>
-            </li>
-            <li>
-              <a
-                href="/join-our-team"
-                className="text-white hover:text-gray-400"
-              >
-                JOIN OUR TEAM
-              </a>
-            </li>
-            <li>
-              <a
-                href="/diversity-inclusion"
-                className="text-white hover:text-gray-400"
-              >
-                DIVERSITY & INCLUSION
-              </a>
-            </li>
+            <li><a className="text-white text-base font-semibold hover:text-gray-400">WHO WE ARE</a></li>
+            <li><a href="/culture" className="text-white hover:text-gray-400">CULTURE</a></li>
+            <li><a href="/join-our-team" className="text-white hover:text-gray-400">JOIN OUR TEAM</a></li>
+           
           </ul>
         </div>
         {/* Column 2 */}
         <div>
-          <h3 className="font-semibold mb-2">WHAT WE DO</h3>
+          <a href="/what-we-do" className="font-semibold mb-2">WHAT WE DO</a>
           <ul>
             <li>
               <a
@@ -97,34 +66,9 @@ const Footer = () => {
         </div>
         {/* Column 3 */}
         <div>
-          <h3 className="font-semibold mb-2 ">INSIGHTS</h3>
+          <a href="/insights" className="font-semibold mb-2 ">INSIGHTS</a>
           <ul>
-            <li>
-              <a href="/blogs" className="text-white hover:text-gray-400">
-                BLOG
-              </a>
-            </li>
-            <li>
-              <a
-                href="/hiring-guides"
-                className="text-white hover:text-gray-400"
-              >
-                HIRING GUIDES
-              </a>
-            </li>
-            <li>
-              <a
-                href="/salary-guide"
-                className="text-white hover:text-gray-400"
-              >
-                SALARY GUIDE
-              </a>
-            </li>
-            <li>
-              <a href="/in-the-news" className="text-white hover:text-gray-400">
-                IN THE NEWS
-              </a>
-            </li>
+          <a href="/contact-us" className="text-white text-base font-semibold hover:text-gray-400">CONTACT US</a>
           </ul>
         </div>
       </div>

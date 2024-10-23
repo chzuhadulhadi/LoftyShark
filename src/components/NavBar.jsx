@@ -12,12 +12,12 @@ const Navbar = () => {
       {/* <a className="sr-only focus:not-sr-only" href="#welcome">
         Skip to main content
       </a> */}
-      <div className="container mx-auto w-[90%] flex justify-between items-center px-4">
+      <div className="container mx-auto w-[90%] text-white flex justify-between items-center px-4">
         {/* Logo */}
         <a
           href="/"
           aria-label="return to homepage"
-          className="flex items-center font-bold text-2xl"
+          className="flex items-center font-bold text-2xl text-white "
         >
           MY SHARK
         </a>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <nav className={`hidden lg:flex items-center space-x-10`}>
           <ul className="flex space-x-6">
             <li className="relative group">
-              <a href="/who-we-are" className="font-[.875rem]">
+              <a className="font-[.875rem] text-white ">
                 Who We Are
               </a>
               <ul className="absolute w-max px-6 py-4 left-0 hidden group-hover:block bg-white text-black p-2 space-y-2 rounded-md">
@@ -34,21 +34,12 @@ const Navbar = () => {
                   <a href="/culture">Culture</a>
                 </li>
                 <li>
-                  <a href="/leadership">Leadership</a>
-                </li>
-                <li>
-                  <a href="/our-offices">Our Offices</a>
-                </li>
-                <li>
                   <a href="/join-our-team">Join Our Team</a>
                 </li>
-                <li>
-                  <a href="/diversity-inclusion">Diversity & Inclusion</a>
-                </li>
-              </ul>
+               </ul>
             </li>
             <li className="relative group">
-              <a href="/what-we-do" className="">
+              <a href="/what-we-do" className="text-white ">
                 What We Do
               </a>
               <ul className="absolute w-max px-6 py-4 left-0 hidden group-hover:block bg-white text-black  p-2 space-y-2 rounded-md">
@@ -66,42 +57,18 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="relative group">
-              <a href="/talent" className="">
+              <a href="/talent" className="text-white ">
                 Talent
               </a>
-              <ul className="absolute left-0 w-max px-6 py-4 hidden group-hover:block bg-white text-black p-2 space-y-2 rounded-md">
-                <li>
-                  <a href="/hire-talent">Hire Talent</a>
-                </li>
-                <li>
-                  <a href="/get-hired">Get Hired</a>
-                </li>
-                <li>
-                  <a href="/find-a-job">Find a Job</a>
-                </li>
-              </ul>
             </li>
             <li className="relative group">
-              <a href="/insights" className="">
+              <a href="/insights" className="text-white ">
                 Insights
               </a>
-              <ul className="absolute left-0 w-max px-4 py-4 hidden group-hover:block bg-white text-black p-2 space-y-2 rounded-md">
-                <li>
-                  <a href="/blogs">Blog</a>
-                </li>
-                <li>
-                  <a href="/hiring-guides">Hiring Guides</a>
-                </li>
-                <li>
-                  <a href="/salary-guide">Salary Guide</a>
-                </li>
-                <li>
-                  <a href="/in-the-news">In The News</a>
-                </li>
-              </ul>
+             
             </li>
             <li>
-              <a href="/contact-us" className="">
+              <a href="/contact-us" className="text-white ">
                 Contact Us
               </a>
             </li>
@@ -112,7 +79,7 @@ const Navbar = () => {
 
         {/* Hamburger Menu for Mobile */}
         <button
-          className="lg:hidden flex flex-col space-y-1 focus:outline-none"
+          className="lg:hidden bg-transparent flex flex-col space-y-1 focus:outline-none"
           aria-label="toggle menu"
           onClick={toggleMenu}
         >
@@ -124,10 +91,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="lg:hidden bg-black text-white mt-4">
-          <ul className="space-y-4 px-4">
+        <nav className="lg:hidden bg-black text-center text-white mt-4">
+          <ul className=" space-y-4 px-4">
             <li>
-              <a href="/who-we-are" className="block">
+              <a  className="block">
                 Who We Are
               </a>
             </li>

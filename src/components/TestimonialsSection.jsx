@@ -8,21 +8,21 @@ const TestimonialsSection = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    fade: true, // Enable fading between slides
+    fade: true,
     autoplay: true,
     autoplaySpeed: 5000,
   };
 
   return (
-    <section className=" py-20">
-      <div className="container mx-auto text-center testimonials--container w-full px-4">
+    <section className="py-20 w-[95%]">
+      <div className="container mx-auto text-center testimonials--container w-full px-4 sm:px-6 lg:px-8">
         <Slider {...settings}>
           {/* Slide 1 */}
           <div className="testimonials--slide pb-10">
             <blockquote className="testimonials--bq">
               <p className="testimonials--copy text-lg md:text-2xl">
-                <span className=" mb-4">
-                  "My recruiter at Mondo provided real-world, constructive
+                <span className="block mb-4">
+                  "My recruiter at My Shark provided real-world, constructive
                   feedback, and throughout the process offered exceptional
                   guidance and reassurance, ensuring that I was well-prepared
                   for each stage..."
@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
                   Gene W.
                 </span>
                 <br />
-                <span className="testimonials--title ">Consultant</span>
+                <span className="testimonials--title">Consultant</span>
               </cite>
             </blockquote>
           </div>
@@ -66,7 +66,7 @@ const TestimonialsSection = () => {
               <p className="testimonials--copy text-lg md:text-2xl">
                 <span className="testimonials--statement block mb-4">
                   "Today, I was offered a full-time position within an
-                  organization after contracting through Mondo for around 9
+                  organization after contracting through My Shark for around 9
                   months..."
                 </span>
               </p>
@@ -107,7 +107,7 @@ const TestimonialsSection = () => {
             <blockquote className="testimonials--bq">
               <p className="testimonials--copy text-lg md:text-2xl">
                 <span className="testimonials--statement block mb-4">
-                  "I was recently placed by a Mondo rep in the interview process
+                  "I was recently placed by a My Shark rep in the interview process
                   for a position at a computer software company. She was nothing
                   short of amazing..."
                 </span>
