@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 @keyframes marquee {
   0% {
     transform: translateX(0);
@@ -29,7 +31,7 @@
 }
 
 
-
+/* 
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SpecialtiesContainer from "./SpecialtiesContainer";
-import RelatedPosts from "./RlattedPosts";
+import RelatedPosts from "./RelatedPosts";
 import TestimonialsSection from "../../TestimonialsSection";
 
 const CreativeStaffing = () => {
@@ -12,63 +12,37 @@ const CreativeStaffing = () => {
 
   const services = [
     {
-      name: "Analytics & Strategy",
-      url: "https://mondo.com/service/hire-web-analytics-consultants/",
+      name: "Client Services",
     },
     {
-      name: "Customer Experience",
-      url: "https://mondo.com/service/hire-cx-customer-experience-talent-capabilities/",
+      name: "Content & Social",
     },
     {
-      name: "Digital Marketing Quality Assurance",
-      url: "",
+      name: "Creative Design & Production",
     },
     {
-      name: "eCommerce",
-      url: "",
+      name: "Graphic Designe",
     },
     {
-      name: "Executive",
-      url: "",
+      name: "Motion Design & Videography",
     },
-    {
-      name: "Marketing Automation & Demand Gen",
-      url: "",
-    },
-    {
-      name: "MarTech",
-      url: "",
-    },
-    {
-      name: "Media Planning & Buying",
-      url: "",
-    },
-    {
-      name: "Project Management",
-      url: "",
-    },
-    {
-      name: "SEO/SEM",
-      url: "",
-    },
-    { name: "UX/UI", url: "" },
   ];
 
   return (
     <>
-      <div className="px-4 md:px-0 pt-32 flex justify-center items-center">
+      <div className="px-4 md:px-0 pt-12 lg:pt-32 flex justify-center items-center">
         <img
           className="w-[50rem] h-full"
           src="/SharkCreative.png"
           alt="MyShark-Creative"
         />
       </div>
-      <div className="flex flex-col pt-32 justify-center items-center">
-        <h1 className="md:text-6xl text-5xl font-bold px-4 md:px-0 text-center">
+      <div className="flex flex-col pt-10 md:pt-32 justify-center items-center">
+        <h1 className="md:text-6xl text-4xl font-bold px-4 md:px-0 text-center">
           We Know Creative Staffing.
         </h1>
       </div>
-      <div className="pt-10 text-xl font-medium text-gray-700 md:text-2xl text-center px-4 md:px-0 md:px-6 md:w-[59%] mx-auto">
+      <div className=" text-lg text-gray-700 md:text-2xl text-center px-4 md:px-0 md:px-6 md:w-[59%] mx-auto">
         <p className="pt-12">
           No marketing team is complete without creative minds. We fill creative
           services roles with talented and artistic individuals who have the
@@ -85,31 +59,21 @@ const CreativeStaffing = () => {
           freelance, contract-to-hire and full-time roles to do just that.
         </p>
       </div>
-      <div className="container mx-auto md:w-[55%] py-28 px-4 md:px-0">
+      <div className="container mx-auto lg:w-[55%] py-28 px-4 md:px-0">
         <h2
-          className="md:text-4xl text-2xl md:px-0 px-4 font-semibold uppercase text-center mb-8"
+          className="lg:text-6xl text-4xl md:px-0 px-4 font-semibold uppercase text-center mb-8"
           data-aos="fade-in"
         >
-          Our Digital Marketing Services
+          Our Creative Staffing Services
         </h2>
         <ul className="text-center space-y-4">
           {services.map((service, index) => (
             <li
               key={index}
               data-aos="fade-in"
-              className="text-green-700 border-b-2 p-2 font-bold hover:text-green-200 text-base md:text-xl"
+              className="text-blue-500 border-b-2 p-2 font-bold text-base lg:text-lg"
             >
-              <a
-                href={service.url}
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent the default link behavior
-                  window.location.href = "/get-hired"; // Redirect to /get-hired
-                }}
-                className="/get-hired"
-                target="_self" // Ensures it opens in the same tab
-              >
-                {service.name}
-              </a>
+              <a href={service.url}>{service.name}</a>
             </li>
           ))}
         </ul>

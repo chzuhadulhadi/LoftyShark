@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SpecialtiesContainer from "./SpecialtiesContainer";
-import RelatedPosts from "./RlattedPosts";
+import RelatedPosts from "./RelatedPosts";
 import TestimonialsSection from "../../TestimonialsSection";
 
 const ItTech = () => {
@@ -12,59 +12,49 @@ const ItTech = () => {
 
   const services = [
     {
-      name: "Analytics & Strategy",
-      url: "",
+      name: "AR, VR & IoT",
     },
     {
-      name: "Customer Experience",
-      url: "",
+      name: "BI, Big Data & Cloud",
     },
     {
-      name: "Digital Marketing Quality Assurance",
-      url: "",
+      name: "Web & Mobile Development",
     },
     {
-      name: "eCommerce",
-      url: "",
+      name: "Data Science",
     },
     {
-      name: "Executive",
-      url: "",
+      name: "Database Administrators (DBA)",
     },
     {
-      name: "Marketing Automation & Demand Gen",
-      url: "",
+      name: "DevOps",
     },
     {
-      name: "MarTech",
-      url: "",
+      name: "eCommerce Tech",
     },
     {
-      name: "Media Planning & Buying",
-      url: "",
+      name: "Hire IT Executives | Mondo Staffing",
     },
     {
-      name: "Project Management",
-      url: "",
+      name: "Infrastructure & Support",
     },
     {
-      name: "SEO/SEM",
-      url: "",
+      name: "Software Development",
     },
-    { name: "UX/UI", url: "" },
+    { name: "Software Development" },
   ];
 
   return (
     <>
-      <div className="px-4 md:px-0 pt-32 max-w-full flex justify-center items-center">
+      <div className="px-4 md:px-0 pt-10 lg:pt-32 max-w-full flex justify-center items-center">
         <img className="w-[51.875rem] h-full" src="/SharkTech.png" alt="" />
       </div>
-      <div className="flex flex-col pt-32 justify-center items-center">
-        <h1 className="md:text-6xl text-5xl font-bold px-4 md:px-0 text-center">
+      <div className="flex flex-col pt-10 md:pt-32 justify-center items-center">
+        <h1 className="md:text-6xl text-4xl font-bold px-4 md:px-0 text-center">
           We Know IT & Tech Staffing.
         </h1>
       </div>
-      <div className="pt-10 text-xl font-medium text-gray-700 md:text-2xl text-center px-4 md:px-0 md:px-6 md:w-[59%] mx-auto">
+      <div className=" text-lg text-gray-700 md:text-2xl text-center px-4 md:px-0 md:px-6 md:w-[59%] mx-auto">
         <p className="pt-12">
           The talent in our exclusive IT and technology network specialize in
           over 180+ of the latest technologies and coding languages. Whether
@@ -80,9 +70,9 @@ const ItTech = () => {
           every step of the way.
         </p>
       </div>
-      <div className="container mx-auto md:w-[55%] py-28 px-4 md:px-0">
+      <div className=" mx-auto lg:w-[55%] py-28 px-4 md:px-0">
         <h2
-          className="md:text-4xl text-2xl md:px-0 px-4 font-semibold uppercase text-center mb-8"
+          className="lg:text-6xl text-4xl md:px-0 px-4 font-semibold uppercase text-center mb-8"
           data-aos="fade-in"
         >
           Our Digital Marketing Services
@@ -92,19 +82,9 @@ const ItTech = () => {
             <li
               key={index}
               data-aos="fade-in"
-              className="text-green-700 border-b-2 p-2 font-bold hover:text-green-200 text-base md:text-xl"
+              className=" text-blue-500 border-b-2 p-3 font-bold  text-base lg:text-lg"
             >
-              <a
-                href={service.url}
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent the default link behavior
-                  window.location.href = "/get-hired"; // Redirect to /get-hired
-                }}
-                className="/get-hired"
-                target="_self" // Ensures it opens in the same tab
-              >
-                {service.name}
-              </a>
+              <a href={service.url}>{service.name}</a>
             </li>
           ))}
         </ul>

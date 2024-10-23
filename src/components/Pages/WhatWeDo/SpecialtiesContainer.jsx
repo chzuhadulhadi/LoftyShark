@@ -33,18 +33,21 @@ const SpecialtiesContainer = () => {
   return (
     <>
       <div className="">
-        <div className=" py-40 bg-gray-200   md:px-20 px-4  ">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className=" lg:[100vh]  py-20 bg-gray-200   md:px-20 px-4  ">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Left Side: List of Specialties */}
-            <div className="space-y-6 pl-12 md:pl-0">
-              <h2 className="md:text-6xl  text-4xl font-bold leading-tight">
-                What we <br /> do Best.
+            <div className="space-y-6 ">
+              <h2 className="lg:text-4xl text-center lg:text-start  text-4xl font-bold leading-tight">
+                What we do Best.
               </h2>
 
               {specialtiesData.map((item) => (
-                <div key={item.id}>
+                <div
+                  className="flex justify-center lg:justify-start"
+                  key={item.id}
+                >
                   <button
-                    className={`w-[60%] hover:text-blue-400 text-left py-3 text-lg md:text-2xl font-semibold border-b-2 ${
+                    className={` flex justify-center items-center text-center hover:text-blue-400 text-left py-3 text-lg md:text-2xl font-semibold border-b-2 ${
                       activeSection === item.id
                         ? "border-gray-400 text-blue-500"
                         : "border-gray-300"
@@ -67,7 +70,7 @@ const SpecialtiesContainer = () => {
                       alt={item.title}
                       className="md:w-[70%] w-full mx-auto "
                     />
-                    <h4 className="md:text-5xl  text-2xl text-center font-bold">
+                    <h4 className="md:text-3xl  text-xl text-center font-bold">
                       {item.title}
                     </h4>
                     <p className="md:text-xl text-base font-semibold text-center text-gray-700 mx-auto md:w-[65%]">
