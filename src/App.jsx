@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home.jsx";
@@ -31,7 +32,7 @@ import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -71,6 +72,7 @@ function App() {
           <Route exact path="/footer" element={<Footer />} />
         </Routes>
       </Router>
+      <Footer />
     </>
   );
 }

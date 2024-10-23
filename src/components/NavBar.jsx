@@ -43,9 +43,7 @@ const Navbar = () => {
                   <a href="/join-our-team">Join Our Team</a>
                 </li>
                 <li>
-                  <a href="/diversity-inclusion">
-                    Diversity & Inclusion
-                  </a>
+                  <a href="/diversity-inclusion">Diversity & Inclusion</a>
                 </li>
               </ul>
             </li>
@@ -60,14 +58,10 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/creative-staffing">
-                    Creative Staffing
-                  </a>
+                  <a href="/creative-staffing">Creative Staffing</a>
                 </li>
                 <li>
-                  <a href="/it-tech">
-                    IT & Tech Staffing
-                  </a>
+                  <a href="/it-tech">IT & Tech Staffing</a>
                 </li>
               </ul>
             </li>
@@ -104,7 +98,6 @@ const Navbar = () => {
                 <li>
                   <a href="/in-the-news">In The News</a>
                 </li>
-               
               </ul>
             </li>
             <li>
@@ -116,7 +109,6 @@ const Navbar = () => {
         </nav>
 
         {/* Login Button */}
-       
 
         {/* Hamburger Menu for Mobile */}
         <button
@@ -159,7 +151,6 @@ const Navbar = () => {
                 Contact Us
               </a>
             </li>
-           
           </ul>
         </nav>
       )}
